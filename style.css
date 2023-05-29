@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #141e28;
+    color: whitesmoke;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+}
+
+div {
+    height: 10vh;
+}
+
+.imgContainer,
+.mainHeading,
+.subContainer,
+.content1,
+.content2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.imgContainer {
+    height: 100vh;
+}
+
+.imgContainer img {
+    width: 100%;
+    height: 100%;
+}
+
+.mainHeading {
+    height: 20vh;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    color: orangered;
+}
+
+.mainHeading h1 {
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.mainHeading p {
+    font-size: 2rem;
+}
+
+.subContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    height: auto;
+}
+
+.subContainer div {
+    display: grid;
+    align-items: center;
+    padding: 2rem;
+    height: auto;
+}
+
+.subContainer div p {
+    font-size: 1.3rem;
+}
+
+.content1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: auto;
+    font-size: 1.5rem;
+}
+
+.content1 div {
+    text-align: justify;
+    padding: 2rem;
+    height: auto;
+}
+
+.content2 {
+    display: grid;
+    grid-template-columns: 33.33% 66.66%;
+    height: auto;
+
+}
+
+.content2 div {
+    padding: 2rem;
+    height: auto;
+}
+
+.content2 div h1, .content2 div h2{
+    color: rgb(0, 166,255);
+}
+
+.content2 div h2{
+    margin-top: 2rem;
+}
+
+.content2 div p{
+    font-size: 1.2rem;
+}
+
+.content2_subContent {
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+.content2_subContent div, .content2_subContent2 div{
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.content2_subContent div img, .content2_subContent2 div img{
+    width: 100%;
+}
+
+.content2_subContent2 {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.content2_subContent2 div p, .middle{
+    color: rgb(0, 166,255);
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    border-bottom: 2px solid grey;
+    border-top: 2px solid grey;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 10%;
+}
